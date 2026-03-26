@@ -4,30 +4,10 @@
 
 **AI-powered crop disease detection and smart farming platform built to help farmers identify plant diseases, receive treatment recommendations, and manage their farms more efficiently.**
 
-![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3-06B6D4?logo=tailwindcss&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-5-646CFF?logo=vite&logoColor=white)
 
 </div>
 
----
 
-## 📋 Table of Contents
-
-- [Project Overview](#-project-overview)
-- [Key Features](#-key-features)
-- [Technology Stack](#-technology-stack)
-- [Free APIs Used](#-free-apis-used)
-- [Project Architecture](#-project-architecture)
-- [Installation Guide](#-installation-guide)
-- [Environment Variables](#-environment-variables)
-- [Deployment Guide](#-deployment-guide)
-- [Folder Structure](#-folder-structure)
-- [Future Improvements](#-future-improvements)
-- [License](#-license)
-
----
 
 ## 🌍 Project Overview
 
@@ -100,11 +80,6 @@ Beyond disease detection, the platform provides a full-suite farm management das
 | **Supabase Storage** | Image and file storage |
 | **Edge Functions** | Server-side logic for emails and API integrations |
 
-### Deployment
-| Platform | Purpose |
-|---|---|
-| **Lovable** | One-click publish from the editor |
-| **Vercel / Netlify** | Alternative static hosting via GitHub |
 
 ---
 
@@ -211,76 +186,9 @@ If you enable **Lovable Cloud / Supabase** for backend features, the following w
 
 > **Note:** Lovable projects do not use `.env` files. Secrets are managed through Lovable Cloud's built-in secrets manager.
 
----
 
-## 🚢 Deployment Guide
 
-### Option 1: Lovable (Recommended)
-1. Open your project in [Lovable](https://lovable.dev)
-2. Click **Share → Publish**
-3. Your app is live with a shareable URL
-4. Optionally connect a [custom domain](https://docs.lovable.dev/features/custom-domain)
 
-### Option 2: Vercel
-1. Push code to a GitHub repository
-2. Go to [vercel.com](https://vercel.com) and import the repository
-3. Set framework preset to **Vite**
-4. Add environment variables if using Supabase
-5. Click **Deploy**
-
-### Option 3: Netlify
-1. Push code to GitHub
-2. Connect the repo on [netlify.com](https://netlify.com)
-3. Set build command: `npm run build`
-4. Set publish directory: `dist`
-5. Deploy
-
----
-
-## 📁 Folder Structure
-
-```
-agriscan-ai/
-├── public/                  # Static assets (favicon, robots.txt)
-├── src/
-│   ├── assets/              # Images and media
-│   ├── components/
-│   │   ├── ui/              # Shadcn UI components (Button, Card, etc.)
-│   │   ├── AppLayout.tsx    # Main layout with sidebar
-│   │   ├── AppSidebar.tsx   # Navigation sidebar
-│   │   └── NavLink.tsx      # Navigation link component
-│   ├── hooks/               # Custom React hooks
-│   ├── lib/
-│   │   ├── farmer-data.ts   # Crop data, translations, and constants
-│   │   ├── language-context.tsx  # Multi-language context provider
-│   │   ├── mock-ai.ts       # AI detection engine and data management
-│   │   └── utils.ts         # Utility functions
-│   ├── pages/
-│   │   ├── Index.tsx         # Landing / home page
-│   │   ├── UploadPage.tsx    # Image upload and field data form
-│   │   ├── ResultPage.tsx    # Disease detection results
-│   │   ├── DashboardPage.tsx # Analytics dashboard
-│   │   ├── WeatherPage.tsx   # Weather monitoring
-│   │   ├── MapPage.tsx       # Satellite map viewer
-│   │   ├── AssistantPage.tsx # AI chatbot assistant
-│   │   ├── DatasetPage.tsx   # Scan history and exports
-│   │   ├── YieldPage.tsx     # Yield analysis
-│   │   ├── CropRecommendPage.tsx  # Crop recommendations
-│   │   ├── FertilizerPage.tsx     # Fertilizer guidance
-│   │   ├── PestMonitorPage.tsx    # Pest monitoring
-│   │   ├── FarmCalendarPage.tsx   # Farming calendar
-│   │   ├── IrrigationPage.tsx     # Irrigation scheduling
-│   │   ├── MarketPricePage.tsx    # Market prices
-│   │   └── SettingsPage.tsx       # App settings
-│   ├── App.tsx              # Root app with routing
-│   └── main.tsx             # Entry point
-├── index.html
-├── tailwind.config.ts
-├── vite.config.ts
-└── package.json
-```
-
----
 
 ## 🔮 Future Improvements
 
@@ -295,19 +203,7 @@ agriscan-ai/
 - 🤝 **Community Forum** — Farmer-to-farmer knowledge sharing
 - 📈 **Predictive Analytics** — ML-based yield forecasting and disease outbreak prediction
 
----
 
-## 🤝 Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request.
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/amazing-feature`
-3. Commit changes: `git commit -m 'Add amazing feature'`
-4. Push to branch: `git push origin feature/amazing-feature`
-5. Open a Pull Request
-
----
 
 ## 📄 License
 
